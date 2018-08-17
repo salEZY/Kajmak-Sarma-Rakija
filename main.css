@@ -1,0 +1,200 @@
+@font-face{
+  font-family: 'Nocturno';
+  src: url(img/Nocturno.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(img/stolnjak.png);
+}
+
+#navStyle {
+  background: url(img/stolnjak.png);
+  margin: 30px 0;
+}
+
+.head{
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 2%;
+  background-color: #FDFD96;
+}
+
+.head h2{
+  padding-top: 20px;
+  font-family: 'Nocturno';
+}
+#clock{
+  padding-top: 40px;
+  font-size: 25px;
+  color: red;
+  font-family: 'Nocturno';
+}
+ .cst {
+  padding-top: 50px;
+  font-size: 15px;
+  color: red;
+  font-family: 'Nocturno';
+}
+#navStyle img {
+  width: 100px;
+  width: 80px;
+}
+
+.flag {
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 2%;
+  background-color: #FDFD96;
+}
+
+#rules {
+  display: flex;
+  flex-direction: row;
+  padding-left: 70px;
+}
+
+#rules img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+#rules span {
+  margin: 0 10px;
+  padding-top: 35px;
+  font-size: 30px;
+  color: red;
+}
+
+#startGame {
+  display: block;
+  margin: 30px auto;
+  font-family: 'Nocturno';
+}
+.game {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+
+.player1 img {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  opacity: 0.3;
+}
+
+.player1 img:hover {
+  opacity: 0.7;
+}
+
+.player2 img {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 130px;
+}
+
+.result{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+#scoreImg{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#tryAgain{
+  margin: 0 auto;
+  display: none;
+  margin-top: 40px;
+  font-family: 'Nocturno';
+}
+}
+footer span {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.mainFoot{
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 2%;
+  background-color: #FDFD96;
+}
+
+.racoon{
+font-family: 'Nocturno';
+}
+
+.social{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 60px;
+}
+.social span{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+.social a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-indent: -9999px;
+  margin-top: 40px;
+  margin-right: 15px;
+
+}
+.social .linked{
+  background: url(img/linked.png);
+  background-size: cover;
+}
+.social .git{
+  background: url(img/github.png);
+  background-size: cover;
+}
+.social a:hover{
+  -webkit-animation: rotation 1s 1 linear;
+}
+/*--helper--*/
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .social span {
+    margin-right: 600px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .social span {
+      margin-right: 785px;
+  }
+}
