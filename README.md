@@ -1,5 +1,5 @@
 # Kajmak-Sarma-Rakija
 Game that rock-paper-scissors was based on
 
-Responsiveness was not the main focus here, rather javascript and hopefully some fun while playing.
+Main focus here was simple javascript training and hopefully some fun while playing, responsiveness took a back seat.
 Enjoy!
