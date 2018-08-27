@@ -14,7 +14,7 @@ body {
 
 #navStyle {
   background: url(img/stolnjak.png);
-  margin: 30px 0;
+  margin-bottom: 20px;
 }
 
 .head{
@@ -147,7 +147,7 @@ footer span {
 .mainFoot{
   height: 100px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 6px;
   border: 2px solid black;
   border-radius: 2%;
   background-color: #FDFD96;
@@ -207,5 +207,43 @@ font-family: 'Nocturno';
 @media screen and (min-width: 1201px) {
   .social span {
       margin-right: 785px;
+  }
+}
+
+@media screen and (max-height: 777px) {
+  #navStyle{
+    height: 80px;
+  }
+
+  .head h2{
+  padding-top: 10px;
+}
+
+#clock{
+  padding-top: 27px;
+  font-size: 25px;
+}
+ .cst {
+  padding-top: 40px;
+  font-size: 15px;
+}
+  #navStyle img {
+    height: 60px;
+    width: 60px;
+    padding-bottom: 5px;
+}
+  .mainFoot{
+    height: 82px;
+  }
+
+  .social span {
+    font-size: 18px;
+    margin-top: 27px;
+    margin-right: 830px;
+  }
+  .social a {
+    width: 32px;
+    height: 32px;
+    margin-top: 25px;
   }
 }

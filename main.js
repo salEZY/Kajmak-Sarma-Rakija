@@ -17,6 +17,7 @@ let result = document.querySelector('.result');
 let tryAgain = document.querySelector('#tryAgain');
 let clockSpan = document.querySelector("#clock");
 let mainMenu = document.querySelector('#backToMain');
+let welcome = document.querySelector('.welcome');
 
 let audio;
 
@@ -35,6 +36,7 @@ function startGame() {
   rules.style.display = "none";
   startBtn.style.display = "none";
   gameWindow.style.display = "block";
+  welcome.style.display = "none";
   p1.forEach(function(e){
     e.addEventListener('click', pick);
   } 
@@ -105,6 +107,7 @@ function backToMenu() {
   rules.style.display = "block";
   startBtn.style.display = "block";
   gameWindow.style.display = "none";
+  welcome.style.display = "block";
   p1.forEach(function(e){
     tryAgain.style.display = "none";
     mainMenu.style.display = "none";
