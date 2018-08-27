@@ -119,6 +119,10 @@ body {
   width: 150px;
   height: 150px;
 }
+.flexButtons{
+  display: flex;
+  
+}
 
 #tryAgain{
   margin: 0 auto;
@@ -126,7 +130,14 @@ body {
   margin-top: 40px;
   font-family: 'Nocturno';
 }
+
+#backToMain{
+  margin: 0 auto;
+  display: none;
+  margin-top: 40px;
+  font-family: 'Nocturno';
 }
+
 footer span {
   margin-top: 20px;
   font-size: 25px;

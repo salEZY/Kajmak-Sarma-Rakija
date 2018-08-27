@@ -16,11 +16,13 @@ let p1 = document.querySelectorAll('.btns');
 let result = document.querySelector('.result');
 let tryAgain = document.querySelector('#tryAgain');
 let clockSpan = document.querySelector("#clock");
+let mainMenu = document.querySelector('#backToMain');
 
 let audio;
 
 startBtn.addEventListener('click', startGame);
 tryAgain.addEventListener('click', retry);
+mainMenu.addEventListener('click', backToMenu);
 
 function startGame() {
   audio  = new Audio();
@@ -63,6 +65,7 @@ function scoring(){
     scoreImg.setAttribute('src', "img/draw.jpg")
 	}
   tryAgain.style.display = "block";
+  mainMenu.style.display = "block";
 }
 
 function computerMove() {
@@ -82,8 +85,29 @@ function pick () {
 function retry () {
   result.innerHTML = "";
   scoreImg.setAttribute('src', "");
+  compChoice.setAttribute('src', "img/question.png");
   p1.forEach(function(e){
     tryAgain.style.display = "none";
+    mainMenu.style.display = "none";
+    e.style.border = "1px solid black";
+    e.style.opacity = "0.3";
+    e.addEventListener('click', pick);
+  } 
+  )
+}
+
+function backToMenu() {
+  audio.pause();
+  result.innerHTML = "";
+  scoreImg.setAttribute('src', "");
+  compChoice.setAttribute('src', "img/question.png");
+  desc.style.display = "block";
+  rules.style.display = "block";
+  startBtn.style.display = "block";
+  gameWindow.style.display = "none";
+  p1.forEach(function(e){
+    tryAgain.style.display = "none";
+    mainMenu.style.display = "none";
     e.style.border = "1px solid black";
     e.style.opacity = "0.3";
     e.addEventListener('click', pick);
