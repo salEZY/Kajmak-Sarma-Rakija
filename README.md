@@ -6,3 +6,5 @@ I would not recommend using raw git, some media files are not working for some r
 Better download the folder and open index.html in browser.
 
 Have fun!
+
+https://salezy.github.io/Kajmak-Sarma-Rakija/
